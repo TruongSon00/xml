@@ -1,0 +1,16 @@
+<!ELEMENT danhSachOrder (bookOrder+)>
+<!ELEMENT bookOrder (orderDate, customer, book)>
+
+<!ELEMENT orderDate (#PCDATA)>
+
+<!ELEMENT customer (title, firstName, lastName)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+
+<!ELEMENT book (name, price)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ENTITY currency "vnd">
+<!ATTLIST book title (kiemHiep | trinhTham | IT) #REQUIRED>
+<!ATTLIST book code CDATA "1">

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE danhSachOrder SYSTEM "bookOrder.dtd">
+
+<danhSachOrder>
+    <bookOrder>
+        <orderDate>20/10/2021</orderDate>
+    
+        <customer>
+            <title>handsome</title>
+            <firstName>Truong</firstName>
+            <lastName>Son</lastName>
+        </customer>
+    
+        <book title= "kiemHiep" code="">
+            <name>anh hung xa dieu</name>
+            <price>10000 &currency;</price>
+        </book>
+    </bookOrder>
+    
+    <bookOrder>
+        <orderDate>20/12/2021</orderDate>
+    
+        <customer>
+            <title>rich</title>
+            <firstName>Long</firstName>
+            <lastName>Vu</lastName>
+        </customer>
+    
+        <book title= "trinhTham" code="1">
+            <name>co mo</name>
+            <price>20000 &currency;</price>
+        </book>
+    </bookOrder>
+</danhSachOrder>

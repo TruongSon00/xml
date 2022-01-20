@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE houses SYSTEM "house.dtd">
+<houses>
+    <house>
+        <room name="bed-room">
+            <dimensions>
+                <width></width>
+                <length></length>
+            </dimensions>
+
+            <windows>
+                <window>
+                    <elevation facing="north" />
+                    <width>1.5 &unitWidth;</width>
+                    <height>2 &unitHeight;;</height>
+                </window>
+            </windows>
+
+            <furniture>do tho</furniture>
+            <furniture>ban ghe</furniture>
+        </room>
+
+        <room name="show-room">
+            <dimensions>
+                <width></width>
+                <length></length>
+            </dimensions>
+
+            <windows>
+                <window>
+                    <elevation facing="north" />
+                    <width>1.5 &unitWidth;</width>
+                    <height>2 &unitHeight;;</height>
+                </window>
+            </windows>
+
+            <furniture>do tho</furniture>
+            <furniture>ban ghe</furniture>
+        </room>
+    </house>
+
+    <house>
+        <room name="live-room">
+            <dimensions>
+                <width></width>
+                <length></length>
+            </dimensions>
+
+            <windows>
+                <window>
+                    <elevation facing="north" />
+                    <width>1.5 &unitWidth;</width>
+                    <height>2 &unitHeight;;</height>
+                </window>
+            </windows>
+
+            <furniture>do tho</furniture>
+            <furniture>ban ghe</furniture>
+        </room>
+    </house>
+</houses>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE orders SYSTEM "order.dtd">
+<orders>
+    <order orderNo="td-1">
+        <orderDate>12/08/2021</orderDate>
+        <customerName>Truong Son</customerName>
+        <detail itemNo="1" itemName="quan ao" quantity="1" price="0"></detail>
+    </order>
+    <order orderNo="xz-2">
+        <orderDate>20/01/2022</orderDate>
+        <customerName>Long Vu</customerName>
+        <detail itemNo="1" itemName="hoa qua" quantity="1" price="0"></detail>
+    </order>
+</orders>
