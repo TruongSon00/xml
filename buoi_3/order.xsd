@@ -1,7 +1,55 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+    <xs:element name="orderNo" type="xs:ID"></xs:element>
+    <xs:element name="orderDate" type="xs:date"/>
+    <xs:element name="name" type="xs:string"/>
+    <xs:element name="address" type="xs:string"/>
+    <xs:element name="email" type="xs:string"/>
+    <xs:attribute name="itemNo" type="xs:ID" />
+    <xs:attribute name="itemName" type="xs:string"/>
+    <xs:attribute name="quantity" type="xs:byte" />
+    <xs:attribute name="price" type="xs:float" />
+
+   <xs:element name="detail">
+        <xs:complexType>
+            <xs:sequence>
+
+                <!-- <xs:element type="xs:string"></xs:element> -->
+            </xs:sequence>
+            <xs:attribute ref="itemNo" use="required"></xs:attribute>
+            <xs:attribute ref="itemName" use="required"></xs:attribute>
+            <xs:attribute ref="quantity" use="optional" default="1" ></xs:attribute>
+            <xs:attribute ref="price" use="optional" default="0" ></xs:attribute>
+        </xs:complexType>
+   </xs:element>
+
+   <xs:element name="customer">
+       <xs:complexType>
+           <xs:sequence>
+               <xs:element ref="name"></xs:element>
+               <xs:element ref="address"></xs:element>
+               <xs:element ref="email"></xs:element>
+           </xs:sequence>
+       </xs:complexType>
+   </xs:element>
+
+   <xs:element name="order">
+       <xs:complexType>
+           <xs:sequence>
+               <xs:element ref="orderNo"></xs:element>
+               <xs:element ref="orderDate"></xs:element>
+               <xs:element ref="customer"></xs:element>
+               <xs:element ref="detail" minOccurs="1" maxOccurs="unbounded"></xs:element>
+           </xs:sequence>
+       </xs:complexType>
+   </xs:element>
+
     <xs:element name="orders">
-        <xs:simpleType>
-            
-        </xs:simpleType>
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="order" minOccurs="1" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
     </xs:element>
 </xs:schema>
