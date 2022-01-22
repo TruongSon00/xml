@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="style.css" type="text/css"?>
-<orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./order.xsd">
+<orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="./order.xsd">
     <order>
         <orderNo>mh7</orderNo>
         <orderDate>  2021-01-20  </orderDate>
@@ -8,7 +9,7 @@
         <customer>
             <name></name>
             <address></address>
-            <email></email>
+            <email>son@gmail.com</email>
         </customer>
 
         <detail itemNo="xy-1" itemName="thuy san" quantity="1" price="10000" />
@@ -22,7 +23,7 @@
         <customer>
             <name></name>
             <address></address>
-            <email></email>
+            <email>vu@gmail.com</email>
         </customer>
 
         <detail itemNo="jk-2" itemName="thuy san" quantity="1" price="10000" />

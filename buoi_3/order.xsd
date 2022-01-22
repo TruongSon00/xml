@@ -4,7 +4,13 @@
     <xs:element name="orderDate" type="xs:date"/>
     <xs:element name="name" type="xs:string"/>
     <xs:element name="address" type="xs:string"/>
-    <xs:element name="email" type="xs:string"/>
+    <xs:element name="email" >
+       <xs:simpleType>
+           <xs:restriction base="xs:string" >
+               <xs:pattern value="([a-z]+)@([a-z]+).([a-z]+)"></xs:pattern>
+            </xs:restriction>
+       </xs:simpleType>
+    </xs:element> 
     <xs:attribute name="itemNo" type="xs:ID" />
     <xs:attribute name="itemName" type="xs:string"/>
     <xs:attribute name="quantity" type="xs:byte" />
