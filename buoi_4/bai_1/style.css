@@ -1,0 +1,24 @@
+contact {
+    border: 4px double rgb(0, 0, 0);
+    width: 500px;
+    display: block;
+    margin: 20px auto;
+}
+
+name,
+street,
+city {
+    display: block;
+}
+
+contact name {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+telephone {
+    display: block;
+    margin: 8px;
+    padding: 12px;
+    border: 1px solid rgb(99, 99, 99);
+}
